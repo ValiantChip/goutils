@@ -6,6 +6,7 @@ import (
 	"math/big"
 )
 
+// Returns a slice of bytes of the length provided using bytes uniformly selected from the provided dictionary
 func Bytes(reader io.Reader, dictionary []byte, length int64) ([]byte, error) {
 	b := make([]byte, length)
 
